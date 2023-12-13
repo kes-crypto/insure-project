@@ -121,7 +121,31 @@ header{
     color: white;
 
   }
-  
+  .intro::before{
+    content: '';
+    background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 451px;
+    pointer-events:none
+
+  }
+  .intro::after{
+    content: '';
+    background-image: url(./images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: absolute;
+    bottom: -18%;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events:none
+  }
   .introDescription h1{
     font-size: 2.75rem;
   }
@@ -145,7 +169,17 @@ header{
     padding: 40px 0 30px 0;
     position: relative;
   }
- 
+  .mid-section h2::before{
+    content: '';
+    background: var(--DarkGrayishViolet);
+    position: absolute;
+    height: 1px;
+    width: 150px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
   .flex-container{
     padding: 0 25px;
   }
@@ -218,6 +252,17 @@ header{
     position: relative;
     text-transform: uppercase;
   }
+  .footer-menu::before{
+    content: '';
+    background: var(--DarkGrayishViolet);
+    position: absolute;
+    height: 1px;
+    width: 325px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
   .footer-menu div{
     padding-top: 40px;
     letter-spacing: 1px;
@@ -284,7 +329,17 @@ header{
       margin-bottom: 280px;
       height: min-content;
     }
-  
+    .intro::before{
+      background-image: url(./images/bg-pattern-intro-left-desktop.svg);
+      background-position: left bottom;
+      top: 50%;
+    }
+    .intro::after{
+      background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+      background-position: right top;
+      top: 0;
+      bottom: 0;
+    }
     .image-intro{
       margin-bottom: -160px;
 
@@ -296,7 +351,15 @@ header{
       position: relative;
       padding-top: 90px;
     }
-    
+    .introDescription h1:before{
+      content: '';
+      background: white;
+      position: absolute;
+      height: 1px;
+      width: 150px;
+      top: 0;
+      left: 0;
+    }
     .mid-section{
       padding: 0 160px;
     }
