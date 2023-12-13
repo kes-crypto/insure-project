@@ -20,7 +20,7 @@ export default function App() {
           <a href="#">Blog</a>
           <a href="#">Account</a>
           <a href="#" id="viewplansBtn">
-            View plans{" "}
+            View Plans
           </a>
         </div>
       </header>
