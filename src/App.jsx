@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "./images/logo.svg";
 import "./index.css";
+import Header from "./components/Header";
 
 export default function App() {
   return (
